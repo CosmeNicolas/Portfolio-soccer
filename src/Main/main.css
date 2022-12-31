@@ -253,3 +253,114 @@ text-align: center;
 
 } 
 
+
+@media screen and (max-width:720px){
+   .options{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 20px;
+  background-color: rgb(0, 0, 0);
+}
+  
+.contenedor-secundario{
+  width: 80%;
+}
+
+  .cancha-fondo{
+    background-image: url('./img/cancha-black-copia.png');
+    
+  }
+
+  .title{
+    font-size: 100%;
+  }
+
+  .span-dev{
+    font-size: x-small;
+    width: 100%;
+    margin-left: 2px;
+  }
+
+ /* pelota */
+
+.div-pelota{
+  display: flex;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  animation: traslado 2s linear 0s infinite alternate forwards;
+  margin-left: -15px;
+}
+
+@keyframes traslado {
+	0% {
+		transform: translateX(0px);
+	}
+
+	100% {
+		transform: translateX(50px);
+	}
+}
+
+.pelota{
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  animation: giro 2s linear 2s infinite alternate-reverse forwards;
+}
+
+@keyframes giro {
+	0% {
+		transform: rotate(0);
+	}
+
+	
+
+  100% {
+		transform: rotate(720deg);
+	}
+}
+
+
+
+  /* footer */
+.pie-pagina{
+  width: 720px;
+  text-align: center;
+}
+
+.pie-pagina .grupo1{
+  
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap:30px;
+  
+}
+
+  .caja{
+    text-align: center;
+    margin-top: 5%;
+  }
+
+ 
+  .grupo2{
+  font-family: 'Play', sans-serif;
+  font-size: 10PX;
+  background-color: black;
+  color: white;
+  margin-bottom: 1px;
+  text-align: center;
+  width: 50%;
+  text-align: center;
+}
+
+.redes {
+text-align: center;
+ display: flex;
+ justify-content: space-around;
+}
+
+} 
