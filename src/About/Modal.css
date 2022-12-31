@@ -1,0 +1,86 @@
+.modal{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: none;
+  justify-content: center;
+  align-content: center;
+}
+
+.modal.is-open{
+  display: flex;
+}
+/* contenedor modal - posicionamiento relativo a su posiscion , que en caso de superar cierto tamaño de altura se puede realizar el scroll "overflow"*/
+.modal-container{
+margin-top: 4rem;
+position: relative;
+padding: 1rem;
+min-width: 200px;
+max-width: 600px;
+min-height: 400px;
+max-height: 400px;
+overflow-y: auto;
+background-color: white;
+border-radius: 13px;
+background-image: url('./banco.jpg');
+background-size: cover;
+}
+/* posicionamiento boton "X" absolute , ya que tendra el poscionamiento de su componente padre */
+.modal-close{
+  position: absolute;
+  top: 16.5rem;
+  right: 1rem;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.modal-close:hover{
+  cursor: pointer;
+}
+.btn-close{
+  
+  border-radius: 50%;
+  color: white;
+}
+
+.btn-close:hover{
+  
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.parrafo{
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.879);
+  justify-content: flex-start;
+  border-radius: 10px;
+  overflow-wrap: break-word;
+ word-break: break-word;
+}
+
+ @media screen and (max-width:400px){
+  .modal{
+    width: 55%;
+  }
+  .modal-container{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+  }
+
+  .modal-close{
+  position: absolute;
+  top:-2.3rem;
+  right: -1rem;
+  border-radius: 50%;
+  background-color: transparent;
+}
+  
+ }
+

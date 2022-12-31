@@ -1,0 +1,120 @@
+.contact{
+ background-image: url('./Banner\ color.png');
+  background-size: cover;
+  border: over;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.container-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: #000000;
+}
+
+
+.formulario{
+  padding: 10%;
+  width: 60%;
+  padding: 10%;
+  margin-left: 20%;
+  
+}
+
+.contenido-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.title-contact{
+  font-family: 'Play', sans-serif;
+  text-align: start;
+  margin: 0;
+  padding: 1px;
+  color: #FFFFFF;
+  font-size: 50px;
+}
+
+input{
+  border-radius: 10px;
+  padding: 1%;
+
+}
+.text-tarea{
+  border-radius: 10px;
+  padding: 1%;
+}
+
+
+button{
+  font-size: x-large;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  color: #FFFFFF;
+  margin-top: 10%;
+  position: relative;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background: black;
+  cursor: pointer;
+  transition: .5s;
+  overflow:hidden;
+}
+
+button::hover {
+  color: white;
+}
+
+button span{
+  position: absolute;
+  background-color: #288e35;
+  transition: .5s;
+}
+
+button span:nth-child(1){
+  width: 100%;
+  height: 3px;
+  top: 0;
+  left: -100%;
+}
+
+button span:nth-child(2){
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  right: -100%;
+}
+
+button span:nth-child(3){
+  width: 3px;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+}
+
+button span:nth-child(4){
+  width: 3px;
+  height: 100%;
+  top: -100%;
+  right: 0;
+}
+
+button:hover span:nth-child(1){
+  left: 0;
+}
+button:hover span:nth-child(2){
+  right: 0;
+}
+button:hover span:nth-child(3){
+  bottom: 0;
+}
+button:hover span:nth-child(4){
+  top: 0;
+}
