@@ -11,7 +11,7 @@ import tictactoe from './Img/Tik-tac-toe.png'
 import nodejs from "./Img/imagenes-it/nodelogo.png";
 import js from "./Img/imagenes-it/js-logo.png"
 import css from "./Img/imagenes-it/csslogo.png"
-import html from "./Img/imagenes-it/htmllogo.png"
+import html from "./Img/imagenes-it/html5-removebg-preview.png"
 import cypress from "./Img/imagenes-it/cypress-logo-removebg-preview.png"
 import reactive from "./Img/imagenes-it/react-logo.png"
 import jira from './Img//imagenes-it/jiralogo.jpg'

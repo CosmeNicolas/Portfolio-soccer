@@ -65,10 +65,6 @@
   text-decoration: none;
 }
 
-
-
-
-
 .redes {
  display: flex;
  justify-content: space-evenly;
@@ -140,23 +136,25 @@
   color: white;
   margin-bottom: 1px;
   text-align: center;
- 
+  width: 100%;
 }
 
-@media screen and (min-width:400px) {
+@media screen and (max-width:400px) {
 
   /* footer */
-.pie-pagina{
-  width: 720px;
-  text-align: center;
+.pie-pagina{   
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  
+  
 }
 
-.pie-pagina .grupo1{
+.pie-pagina.grupo1{
   
-  width: 50%;
+  width:100%;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -164,22 +162,13 @@
   
 }
 
-  .pie-pagina.caja{
+.pie-pagina.caja{
     text-align: center;
     margin-top: -10%;
   }
 
  
- .pie-pagina .grupo2{
-  font-family: 'Play', sans-serif;
-  font-size: 10PX;
-  background-color: black;
-  color: white;
-  margin-bottom: 1px;
-  text-align: center;
-  width: 100%;
- 
-}
+
 .kick{
   
   width: 30%;
@@ -190,5 +179,18 @@
 text-align: center;
  display: flex;
  justify-content: space-around;
+}
+
+ .pie-pagina.grupo2{
+  font-family: 'Play', sans-serif;
+  font-size: 10PX;
+  background-color: black;
+  color: white;
+  margin-bottom: 1px;
+  text-align: center;
+  color: black;
+  display: flex;
+  align-content: center;
+  width: 100%;
 }
 }

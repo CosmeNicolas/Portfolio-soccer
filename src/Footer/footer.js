@@ -15,8 +15,8 @@ export default function Footter(){
     const {theme} = useContext(ThemeContext)
   const {texts} = useContext(LanguageContex)
   return(
-    <div className={theme}>
     <footer className='pie-pagina'>
+      <div className={theme}>
       <div className='grupo1'>
         <div className='caja'>
           <figure>
@@ -39,9 +39,9 @@ export default function Footter(){
           </div>
         </div>
       </div>
-      <div className='grupo2'>🫶{texts.footer}🤙</div>
-    </footer>
     </div>
+    <div className="grupo2">🫶{texts.footer}🤙</div>
+    </footer>
   )
 }
 
