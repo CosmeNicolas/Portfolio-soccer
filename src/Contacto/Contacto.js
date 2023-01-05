@@ -7,6 +7,7 @@ import ThemeContext from '../Context/ThemeContext';
 function Contacto (){
   const {theme} = useContext(ThemeContext)
   const {texts} = useContext(LanguageContex)
+
     return(
         <>
         <div className={theme} id="contact">
@@ -18,7 +19,7 @@ function Contacto (){
               <input className='name' type='text' placeholder='Name' size="50" required></input>
             <input type="email" name="myInput" placeholder="your@email.com" size="" required></input>
               <textarea className="text-tarea" name="myTextarea" placeholder="Your message here" cols="20" rows="5" minlength="5" maxlength="500" required></textarea>
-                <button type='submit' className='btn-submit'>
+                <button type='submit' className='btn-submit' onClick={()=>{alert("Mensaje Enviado")}}>
                 <span></span>
                 <span></span>
                 <span></span>
